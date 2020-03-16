@@ -1,5 +1,6 @@
-import React, {useState, useEffect} from 'react'
-import axios from 'axios'
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
+import './App.css';
 
 export default function App () {
     const [users, setUsers] = useState([]);
@@ -32,10 +33,11 @@ export default function App () {
     };
 
     return (
-        <div>
+        <div className="name">
+            <h2>Search Component Using <code>Hooks</code></h2>
             <input type='text'
                    autoFocus
-                   placeholder='Search for a User'
+                   placeholder='Search...'
                    onChange={handleInputChange} />
 
             <ul>
